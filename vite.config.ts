@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: "/spotify-lyric-card-generator",
+    base: "/",
     plugins: [
         tailwindcss(),
         react()

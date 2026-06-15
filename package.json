@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pingu204.github.io/spotify-lyric-card-generator/",
+  "homepage": "https://lyrics.jopeth.me",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="border border-gray-600 h-[1em]"></div>
         <a href="https://github.com/pingu204/spotify-lyric-card-generator" target="_blank">
         <span className="flex items-center gap-2">
-            View Repository 
+            View the Repository 
             <span className="icon-[mdi--github]"></span>
         </span>
         </a>
