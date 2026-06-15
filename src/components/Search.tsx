@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useFetchTracks } from "../hooks/useFetchTracks";
 import Lyrics from "./Lyrics";
 import SearchResult from "./ui/SearchResult";

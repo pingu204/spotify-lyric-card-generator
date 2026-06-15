@@ -1,4 +1,3 @@
-import BopieStudios from "../assets/bopie_studios.png"
 
 const Navbar = () => {
     return (<>
