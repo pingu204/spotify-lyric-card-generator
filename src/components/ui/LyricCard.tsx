@@ -36,8 +36,11 @@ const LyricCard: React.FC<LyricCardProps> = ({
 
     const getFontSize = () => {
         let sizeClass: string
+        const threshold = 40
+        const factor = Math.ceil(lyrics.slice(minIdx as number, (maxIdx as number) + 1).join(' ').length / threshold)
 
-        switch (((maxIdx as number)-(minIdx as number))+1) {
+
+        switch (factor) {
             case 1:
                 sizeClass = "text-4xl/10"
                 break;

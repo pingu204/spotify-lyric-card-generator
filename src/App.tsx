@@ -11,10 +11,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="flex flex-col overflow-y-hidden h-svh">
+    <div className="border-x border-x-gray-700 flex flex-col overflow-y-hidden h-svh">
         <Navbar />
         <Search />
-        <div className="ticks"></div>
+        {/* <div className="ticks"></div> */}
         <Footer />
     </div>
   )

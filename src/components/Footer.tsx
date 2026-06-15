@@ -1,7 +1,7 @@
 import LRCLib from "../assets/lrclib-370c57eb.png"
 
 const Footer = () => {
-    return (<div className="text-gray-400 h-navbar flex-none text-sm flex flex-row gap-6 items-center justify-center border-t border-gray-600   ">
+    return (<div className="text-gray-400 h-navbar flex-none text-sm flex flex-row gap-6 items-center justify-center border-t border-gray-700   ">
         <span className="flex items-center gap-2">
             Powered by 
             <span className="icon-[brandico--lastfm]"></span>
