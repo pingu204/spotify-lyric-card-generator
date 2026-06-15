@@ -2,10 +2,6 @@ import { useEffect, useRef, useState } from "react";
 
 const API_KEY = "fe00a3010a03fabd46b5a781426f1f62"
 
-interface Props {
-    query: string;
-}
-
 export interface Info {
     image: {
         "#text": string
@@ -19,7 +15,7 @@ export function useFetchTracks() {
     const [chosenIdx, setChosenIdx] = useState<number | null>(null)
     const [tracks, setTracks] = useState<Info[]>([])
 
-    const timerRef = useRef<NodeJS.Timeout>(null)
+    const timerRef = useRef<ReturnType<typeof setTimeout>>(null)
 
     const fetchCoverArt = async (artist: string, track: string) => {
         const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${artist}&track=${track}&format=json`)
@@ -37,7 +33,7 @@ export function useFetchTracks() {
             const data = await response.json()
             const results = data?.results?.trackmatches?.track
             const tracksWithImages = await Promise.all(
-                results.map(async (track) => ({
+                results.map(async (track: Info) => ({
                     ...track,
                     image: await fetchCoverArt(track.artist, track.name),
                 }))
