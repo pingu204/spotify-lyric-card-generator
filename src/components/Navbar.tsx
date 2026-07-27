@@ -7,7 +7,7 @@ const Navbar = () => {
             </div>
             {/* <span className="text-xl font-semibold">Wait, that's a song</span> */}
             <div className="grow"></div>
-            <span className="text-sm text-gray-400">Made by <a href="https://jopeth.me" target="_blank" className="hover:opacity-50 hover:underline transition-all font-bold">Bopie</a></span>
+            <span className="text-sm text-gray-400">Made by <a href="https://jopeth.xyz" target="_blank" className="hover:opacity-50 hover:underline transition-all font-bold">Bopie</a></span>
         </div>
     </>)
 }
